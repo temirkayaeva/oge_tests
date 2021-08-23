@@ -1,23 +1,29 @@
 document.querySelector('.submit-task-1').addEventListener('click', () => {
-    document.querySelector('.task-1 .right-answer').innerHTML = "Правильный ответ: 46531";
+    document.querySelector('.task-1 .right-answer').innerHTML = "Правильный ответ: 60.6";
 });
 
 document.querySelector('.submit-task-2').addEventListener('click', () => {
-    document.querySelector('.task-2 .right-answer').innerHTML = "Правильный ответ: 19";
+    document.querySelector('.task-2 .right-answer').innerHTML = "Правильный ответ: 9890";
 });
 
 document.querySelector('.submit-task-3').addEventListener('click', () => {
-    document.querySelector('.task-3 .right-answer').innerHTML = "Правильный ответ: 3.36";
+    document.querySelector('.task-3 .right-answer').innerHTML = "Правильный ответ: 73";
 });
 
 document.querySelector('.submit-task-4').addEventListener('click', () => {
-    document.querySelector('.task-4 .right-answer').innerHTML = "Правильный ответ: 25";
+    document.querySelector('.task-4 .right-answer').innerHTML = "Правильный ответ: 11461";
 });
 
 document.querySelector('.submit-task-5').addEventListener('click', () => {
-    document.querySelector('.task-5 .right-answer').innerHTML = "Правильный ответ: 820";
+    document.querySelector('.task-5 .right-answer').innerHTML = "Правильный ответ: 9";
 });
 
+
+
+
+document.querySelector('.task-1 .help-icon').addEventListener('click', () => {
+    document.querySelector('.task-1 .help').classList.toggle('help-active');
+});
 
 document.querySelector('.task-2 .help-icon').addEventListener('click', () => {
     document.querySelector('.task-2 .help').classList.toggle('help-active');
@@ -62,7 +68,7 @@ document.querySelector('.sendTest').addEventListener('click', function () {
             answerTask5.value = 0;
         }
     }
-    if (answerTask1.value.trim() == 46531) {
+    if (answerTask1.value.trim() == 60.6) {
         answerTask5.classList.remove('answer-fail');
         answerTask1.classList.add('answer-success');
         count++;
@@ -70,7 +76,7 @@ document.querySelector('.sendTest').addEventListener('click', function () {
         answerTask1.classList.add('answer-fail');
     }
 
-    if (answerTask2.value.trim() == 19) {
+    if (answerTask2.value.trim() == 9890) {
         answerTask5.classList.remove('answer-fail');
         answerTask2.classList.add('answer-success');
         count++;
@@ -78,7 +84,7 @@ document.querySelector('.sendTest').addEventListener('click', function () {
         answerTask2.classList.add('answer-fail');
     }
 
-    if (answerTask3.value.trim() == 3.36) {
+    if (answerTask3.value.trim() == 73) {
         answerTask5.classList.remove('answer-fail');
         answerTask3.classList.add('answer-success');
         count++;
@@ -86,7 +92,7 @@ document.querySelector('.sendTest').addEventListener('click', function () {
         answerTask3.classList.add('answer-fail');
     }
 
-    if (answerTask4.value.trim() == 25) {
+    if (answerTask4.value.trim() == 11461) {
         answerTask5.classList.remove('answer-fail');
         answerTask4.classList.add('answer-success');
         count++;
@@ -94,7 +100,7 @@ document.querySelector('.sendTest').addEventListener('click', function () {
         answerTask4.classList.add('answer-fail');
     }
 
-    if (answerTask5.value.trim() == 820) {
+    if (answerTask5.value.trim() == 9) {
         answerTask5.classList.remove('answer-fail');
         answerTask5.classList.add('answer-success');
         count++;
