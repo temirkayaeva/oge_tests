@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #d0cdf9;
+    background-color: #6cc0c0;
     font-family: 'Montserrat',
         sans-serif;
     /* background-image: url('./bg.png');
@@ -14,22 +14,88 @@ body {
     background-size: cover; */
 }
 
+.card {
+    padding: 20px;
+    width: 300px;
+    min-height: 200px;
+    transition: .5s box-shadow ease;
+}
+
+.card__title {
+
+    /* padding: 20px; */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    color: #92c15b;
+    transition: .5s font-size ease-in;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+}
+
+.card__descr {
+    text-align: center;
+    margin: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px #e2e0ff;
+}
+
+.card__knowledge {
+    position: relative;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.card__knowledge li::before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    width: 10px;
+    height: 10px;
+    background-color: #92c15b;
+    border-radius: 50%;
+    transform: translateY(50%);
+}
+
 .container {
     width: 1024px;
     margin: 30px auto;
     background-color: #fff;
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 0px 0px 10px #e6e6e6;
+    /* box-shadow: 0px 0px 10px #e6e6e6; */
 }
 
 .title {
     margin-top: 10px;
     text-align: center;
     font-weight: 700;
-    color: #da4a4a;
-    font-size: 60px;
+    color: #23a0a4;
+    font-size: 50px;
 }
+
+svg {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    fill: #92c15b;
+    transition: .5s width ease-in;
+}
+
+.card:hover svg {
+    width: 70px;
+}
+
+.card:hover .card__title {
+    font-size: 25px;
+}
+
 
 .buttons {
     margin: 20px auto;
@@ -39,11 +105,13 @@ body {
 }
 
 button {
-    width: 200px;
+    display: block;
+    width: 150px;
     height: 50px;
-    margin-top: 20px;
-    margin-right: 20px;
-    background-color: #d0cdf9;
+    margin: 20px auto 0 auto;
+    /* margin-top: 20px;
+    margin-right: 20px; */
+    background-color: #92c15b;
     border: none;
     border-radius: 5px;
     font-weight: 500;
