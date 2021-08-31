@@ -87,8 +87,8 @@ document.querySelector('.sendTest').addEventListener('click', function () {
     }
 
     if (answerTask4.value.trim() == 25) {
+        answerTask4.classList.add('answer-success');        
         answerTask5.classList.remove('answer-fail');
-        answerTask4.classList.add('answer-success');
         count++;
     } else {
         answerTask4.classList.add('answer-fail');
