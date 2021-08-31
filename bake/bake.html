@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bake.css">
+    <title>Печь</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Печь</h1>
+        <div class="tasks">
+            <div class="descr">Хозяин выбрал дровяную печь (рис. 1). Чертёж передней панели печи показан на рисунке 2.
+            </div>
+            <img class="img-flat" src="./bake.png" alt="" width="700">
+            <div class="descr">
+                Хозяин дачного участка строит баню с парным отделением. Парное отделение имеет размеры: длина 3,5 м,
+                ширина 2,2 м, высота 2 м. Окон в парном отделении нет, для доступа внутрь планируется дверь шириной 60
+                см, высота дверного проёма 1,8 м. Для прогрева парного отделения можно использовать электрическую или
+                дровяную печь. В таблице представлены характеристики трёх печей.
+                Для установки дровяной печи дополнительных затрат не потребуется. Установка электрической печи потребует
+                подведения специального кабеля, что обойдётся в 6500 руб.
+            </div>
+
+            <div class="table-wrapper">
+                <table class="table-task-5">
+                    <tr>
+                        <th>Номер печи</th>
+                        <th>Тип</th>
+                        <th>Объем помещения</th>
+                        <th>Масса</th>
+                        <th>Стоимость</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Дровяная</td>
+                        <td>8-12 </td>
+                        <td>40</td>
+                        <td>18 000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Дровяная</td>
+                        <td>10-16 </td>
+                        <td>48</td>
+                        <td>19 500</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Электрическая</td>
+                        <td>9-15,5 </td>
+                        <td>15</td>
+                        <td>15 000</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="task-1">
+                <h2 class="header">Задание 1</h2>
+                <hr>
+                <div class="descr">Установите соответствие между объёмами помещения и номерами печей, для которых данный
+                    объём является наименьшим для отопления помещений. Заполните таблицу, в бланк ответов перенесите
+                    последовательность трёх цифр без пробелов, запятых и других дополнительных символов.
+                </div>
+                <div class="table-wrapper">
+                    <table class="table-task-5">
+                        <tr>
+                            <th>Объем</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                        </tr>
+                        <tr>
+                            <th>Номер печи</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="answer">
+                    <input type="text" class="input-task-1" value="" placeholder="Введите последовательность из 3 цифр">
+                    <button class="submit-task-1">Правильный ответ</button>
+                    <div class="help-icon">?</div>
+                    <div class="help">
+                        <p>Проанализируйте таблицу и ответьте на вопрос.
+                        </p>
+                    </div>
+                </div>
+                <div class="right-answer">
+                </div>
+            </div>
+
+            <div class="task-2">
+                <h2 class="header">Задание 2</h2>
+                <hr>
+                <div class="descr">На сколько рублей покупка дровяной печи, подходящей по объёму парного отделения,
+                    обойдётся дороже электрической без учёта установки?</div>
+                <div class="answer">
+                    <input type="text" class="input-task-2" value=""
+                        placeholder="Введите целое число или конечную десятичную дробь">
+                    <button class="submit-task-2">Правильный ответ</button>
+                    <div class="help-icon">?</div>
+                    <div class="help">
+                        <p>Найдите разницу стоимостей дровяной и электрической печей.</p>
+                    </div>
+                </div>
+                <div class="right-answer">
+                </div>
+            </div>
+
+            <div class="task-3">
+                <h2 class="header">Задание 3</h2>
+                <hr>
+                <div class="descr">Найдите объём парного отделения строящейся бани. Ответ дайте в кубических метрах.
+                </div>
+                <div class="answer">
+                    <input type="text" class="input-task-2" value=""
+                        placeholder="Введите целое число или конечную десятичную дробь">
+                    <button class="submit-task-3">Правильный ответ</button>
+                    <div class="help-icon">?</div>
+                    <div class="help">
+                        <p>Парное отделение представляет собой параллелепипед, объём которого можно вычислить по формуле
+                            V = a ∙ b ∙ с, где a, b, с – его измерения.
+                        </p>
+                    </div>
+                </div>
+                <div class="right-answer">
+                </div>
+            </div>
+
+            <div class="task-4">
+                <h2 class="header">Задание 4</h2>
+                <hr>
+                <div class="descr">На дровяную печь, масса которой 48 кг, сделали скидку 10%. Сколько рублей стала
+                    стоить печь?</div>
+                <div class="answer">
+                    <input type="text" class="input-task-2" value=""
+                        placeholder="Введите целое число или конечную десятичную дробь">
+                    <button class="submit-task-4">Правильный ответ</button>
+                    <div class="help-icon">?</div>
+                    <div class="help">
+                        <p>Посмотрите по таблице стоимость указанной дровяной печи.
+                        </p>
+                        <p>Найдите её новую цену, составив пропорцию.
+                        </p>
+                    </div>
+                </div>
+                <div class="right-answer">
+                </div>
+            </div>
+
+            <div class="task-5">
+                <h2 class="header">Задание 5</h2>
+                <hr>
+                <div class="descr">Печь снабжена кожухом вокруг дверцы топки. Верхняя часть кожуха выполнена в виде
+                    арки, приваренной к передней стенке печки по дуге окружности с центром в середине нижней части
+                    кожуха (см. рис. 2). Для установки печки хозяину понадобилось узнать радиус закругления арки R.
+                    Размеры кожуха в сантиметрах показаны на рисунке. Найдите радиус закругления арки в сантиметрах.
+                </div>
+                <div class="answer">
+                    <input type="text" class="input-task-2" value=""
+                        placeholder="Введите целое число или конечную десятичную дробь">
+                    <button class="submit-task-5">Правильный ответ</button>
+                    <div class="help-icon">?</div>
+                    <div class="help">
+                        <p>Проведите радиус.
+                        </p>
+                        <p>Используйте теорему
+                            Пифагора c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> (с – гипотенуза,
+                            а, b – катеты).
+                        </p>
+                    </div>
+                </div>
+                <div class="right-answer">
+                </div>
+            </div>
+        </div>
+        <button class="sendTest">Завершить тест</button>
+        <div class="right-answers descr"></div>
+    </div>
+    <script src="./bake.js"></script>
+</body>
+
+</html>

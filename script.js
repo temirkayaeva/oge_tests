@@ -8,5 +8,8 @@ for (let button of buttons) {
         } else if (button.classList.contains('flat')) {
             location.href = 'flat/flat' + '.html';
         }
+        else if (button.classList.contains('bake')) {
+            location.href = 'bake/bake' + '.html';
+        }
     });
 }

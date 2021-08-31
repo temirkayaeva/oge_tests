@@ -63,6 +63,22 @@ body {
     transform: translateY(50%);
 }
 
+.card__knowledge_blue li::before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    width: 10px;
+    height: 10px;
+    background-color: #23a0a4;
+    border-radius: 50%;
+    transform: translateY(50%);
+}
+
+.button_blue {
+    background-color: #23a0a4;
+    color: #fff;
+}
+
 .container {
     width: 1024px;
     margin: 30px auto;
@@ -93,9 +109,16 @@ svg {
 }
 
 .card:hover .card__title {
-    font-size: 25px;
+    font-size: 23px;
 }
 
+.card__icon_blue svg {
+    fill: #23a0a4;
+}
+
+.card__title_blue {
+    color: #23a0a4;
+}
 
 .buttons {
     margin: 20px auto;
@@ -114,14 +137,34 @@ button {
     background-color: #92c15b;
     border: none;
     border-radius: 5px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
     font-family: inherit;
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: 2px 2px 2px #e6e6e6;
+    color: #fff;
 }
 
 button:active {
     background-color: #c7c4ec;
+}
+
+.nav_list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.nav_list a {
+    color: #23a0a4;
+    text-decoration: none;
+}
+
+.nav_list a:active {
+    color: #92c15b;
 }
