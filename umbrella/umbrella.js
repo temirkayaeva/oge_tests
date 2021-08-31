@@ -69,7 +69,7 @@ document.querySelector('.sendTest').addEventListener('click', function () {
         }
     }
     if (answerTask1.value.trim() == 60.6) {
-        answerTask5.classList.remove('answer-fail');
+        answerTask1.classList.remove('answer-fail');
         answerTask1.classList.add('answer-success');
         count++;
     } else {
@@ -77,7 +77,7 @@ document.querySelector('.sendTest').addEventListener('click', function () {
     }
 
     if (answerTask2.value.trim() == 9890) {
-        answerTask5.classList.remove('answer-fail');
+        answerTask2.classList.remove('answer-fail');
         answerTask2.classList.add('answer-success');
         count++;
     } else {
@@ -85,7 +85,7 @@ document.querySelector('.sendTest').addEventListener('click', function () {
     }
 
     if (answerTask3.value.trim() == 73) {
-        answerTask5.classList.remove('answer-fail');
+        answerTask3.classList.remove('answer-fail');
         answerTask3.classList.add('answer-success');
         count++;
     } else {
@@ -93,7 +93,7 @@ document.querySelector('.sendTest').addEventListener('click', function () {
     }
 
     if (answerTask4.value.trim() == 11461) {
-        answerTask5.classList.remove('answer-fail');
+        answerTask4.classList.remove('answer-fail');
         answerTask4.classList.add('answer-success');
         count++;
     } else {

@@ -55,7 +55,7 @@ let answerTask_2;
 let answerTask_3;
 let answerTask_4;
 let answerTask_5;
-
+let isFirstAnswer = true;
 
 
 document.querySelector('.sendTest').addEventListener('click', function () {
@@ -80,7 +80,10 @@ document.querySelector('.sendTest').addEventListener('click', function () {
     if (answerTask_1.value.trim() == 132) {
         answerTask_1.classList.remove('answer-fail');
         answerTask_1.classList.add('answer-success');
-        count++;
+        if (isFirstAnswer) {
+            isFirstAnswer = false;
+            count++;
+        }
     } else {
         answerTask_1.classList.add('answer-fail');
     }
@@ -116,7 +119,7 @@ document.querySelector('.sendTest').addEventListener('click', function () {
     } else {
         answerTask_5.classList.add('answer-fail');
     }
+    let result = document.querySelector('.right-answers');
+    result.innerHTML = `Результат: ${count}/5`;
 });
 
-// let result = document.querySelector('.right-answers');
-// result.innerHTML = `Результат: ${count}/5`;
